@@ -43,13 +43,24 @@ var org = nforce.createConnection({
 
 app.get('/auth/sfdc/callback', function(req, res) {
     console.log('** I am In**');
+    var event_values;
     org.authenticate({code: req.query.code}, function(err, resp){
       if(!err) {
         console.log('Access Token: ' + resp.access_token);
         oauth = resp;
+        conn.authorize(code, function(err, userinfo){
+          if (err) {return console.error(err);}
+
+          conn.streaming.topic("/event/leadInfo__e").subscribe(function(message){
+            console.dir(message);
+            event_values = [message.event.replayId, message.payload];
+            console.log('event_values', event_values);
+          })
+
+        })
         
         res.render('final',{
-          appVar: 'my App variable'
+          appVar: event_values
         });
       } else {
         console.log('Error: ' + err.message);
