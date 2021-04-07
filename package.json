@@ -1,6 +1,6 @@
 {
   "name": "SalesforcePlatformevent",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Surface Lightning Component on Node.js Application",
   "main": "Server.js",
   "scripts": {
@@ -29,8 +29,6 @@
     "nforce": "latest",
     "pg": "latest",
     "request": "~2.36.0"
-  },
-  "engines": {
-    "node": "0.10.x"
   }
+  
 }
