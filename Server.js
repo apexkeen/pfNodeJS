@@ -30,7 +30,8 @@ var org = nforce.createConnection({
     loginUrl:"login.salesforce.com",
     clientId: '3MVG9HxRZv05HarR8ZOS03xrgahNv6iAUgt3n_QvhOk3tmnFEGa0_9_odphvjIN3jJaVipfn3.NOT4J3mQnbd',
     clientSecret: '4C11300C45110F15D0462FB203FF351ACBC47F3845BF183452B54F1A3C592B5C',
-    redirectUri: 'http://localhost:8080/auth/sfdc/callback',
+    //redirectUri: 'http://localhost:8080/auth/sfdc/callback',
+    redirectUri: 'https://pfeventswithnode.herokuapp.com/auth/sfdc/callback',
     apiVersion: 'v43.0',  // optional, defaults to current salesforce API version
     environment: 'production',  // optional, salesforce 'sandbox' or 'production', production default
     mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
