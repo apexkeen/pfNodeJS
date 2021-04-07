@@ -25,10 +25,10 @@
     "express": "~4.7.1",
     "hbs": "^4.1.1",
     "http": "~0.0.0",
+    "jsforce": "^1.10.1",
     "logfmt": "~1.1.2",
     "nforce": "latest",
     "pg": "latest",
     "request": "~2.36.0"
   }
-  
 }

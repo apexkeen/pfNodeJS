@@ -10,6 +10,7 @@ var https = require('https');
 var fs = require('fs');
 var nforce = require('nforce');
 var pg = require("pg");
+var jsforce = require("jsforce");
  
 	
 var logFmt = require("logfmt");
