@@ -48,7 +48,7 @@ app.get('/auth/sfdc/callback', function(req, res) {
       if(!err) {
         console.log('Access Token: ' + resp.access_token);
         oauth = resp;
-        var conn = new jsforce.connection({oauth2:oauth});
+        var conn = new jsforce.connection({oauth2:oauth});  
         var code  = req.param('code');
         conn.authorize(code, function(err, userinfo){
           if (err) {return console.error(err);}
