@@ -1,0 +1,36 @@
+{
+  "name": "SalesforcePlatformevent",
+  "version": "0.0.1",
+  "description": "Surface Lightning Component on Node.js Application",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Node.Js",
+    "Lightnig Component",
+    "Lightnig Out",
+    "API",
+    "Salesforce"
+  ],
+  "author": "Jitendra Zaa",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.6.2",
+    "cors": "2.8.1",
+    "express": "~4.7.1",
+    "hbs": "^4.1.1",
+    "http": "~0.0.0",
+    "logfmt": "~1.1.2",
+    "nforce": "latest",
+    "pg": "latest",
+    "request": "~2.36.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
